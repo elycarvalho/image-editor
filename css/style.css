@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', arial, sans-serif;
+}
+
+#imgContainer{
+	width: 300px;
+	height: 300px;
+}
+
+img{
+	width: 100%;
+}
+
+#bright{
+	border: 1px solid red;
+}

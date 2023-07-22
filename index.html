@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<meta name="keywords" content="Palavras chave">
+	<meta charset="utf-8">
+	<!--<meta http-equiv="refresh" content="30">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Projeto padrão</title>
+</head>
+<body>
+   <div class="container">
+   	<h3>upload file:</h3>
+	   <input type="file" id="fileInput">  
+	   <div id="imgContainer"></div>
+   </div>
+   <div id="container-ajustes" >
+   	<p>brightness</p>
+   	<input type="range" id="bright" min="0" max="200" onchange="change('bright')">
+   	<div id="bright-percent"></div>
+   	<p>contrast</p>
+   	<input type="range" id="contrast" min="0" max="200" onchange="change('contrast')">
+   	<div id="contrast-percent"></div>
+   	<p>opacity</p>
+   	<input type="range" id="opacity" min="0" max="100" value="0" onchange="change('opacity')">
+   	<div id="opacity-percent"></div>
+   	<p>grayscale</p>
+   	<input type="range" id="grayscale" min="0" max="200" value="0" onchange="change('grayscale')">
+   	<div id="grayscale-percent"></div>
+   	<p>saturate</p>
+   	<input type="range" id="saturate" min="0" max="200" onchange="change('saturate')">
+   	<div id="saturate-percent"></div>
+   	<p>invert</p>
+   	<input type="range" id="invert" min="0" max="100" value="0" onchange="change('invert')">
+   	<div id="invert-percent"></div>
+   	<p>blur</p>
+   	<input type="range" id="blur" min="0" max="30" value="0" onchange="change('blur')">
+   	<div id="blur-percent"></div>
+   </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
