@@ -58,7 +58,7 @@ function change(e){
       	break
       case 'blur':
       	img.style.filter = `blur(${blur.value}px)`
-      	blurPercent.innerHTML = `${blur.value}%`	 
+      	blurPercent.innerHTML = `${blur.value}px`	 
     }
 }
 

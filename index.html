@@ -10,34 +10,43 @@
 	<title>Projeto padrão</title>
 </head>
 <body>
-   <div class="container">
-   	<h3>upload file:</h3>
-	   <input type="file" id="fileInput">  
-	   <div id="imgContainer"></div>
-   </div>
-   <div id="container-ajustes" >
-   	<p>brightness</p>
-   	<input type="range" id="bright" min="0" max="200" onchange="change('bright')">
-   	<div id="bright-percent"></div>
-   	<p>contrast</p>
-   	<input type="range" id="contrast" min="0" max="200" onchange="change('contrast')">
-   	<div id="contrast-percent"></div>
-   	<p>opacity</p>
-   	<input type="range" id="opacity" min="0" max="100" value="0" onchange="change('opacity')">
-   	<div id="opacity-percent"></div>
-   	<p>grayscale</p>
-   	<input type="range" id="grayscale" min="0" max="200" value="0" onchange="change('grayscale')">
-   	<div id="grayscale-percent"></div>
-   	<p>saturate</p>
-   	<input type="range" id="saturate" min="0" max="200" onchange="change('saturate')">
-   	<div id="saturate-percent"></div>
-   	<p>invert</p>
-   	<input type="range" id="invert" min="0" max="100" value="0" onchange="change('invert')">
-   	<div id="invert-percent"></div>
-   	<p>blur</p>
-   	<input type="range" id="blur" min="0" max="30" value="0" onchange="change('blur')">
-   	<div id="blur-percent"></div>
-   </div>
+	<div class="upper-bar">
+		<input type="file" id="fileInput">	
+	</div>
+    <div class="container">     
+	    <div id="imgContainer"></div>
+
+		<div class="container-ajustes" >
+			<div class="ajuste">
+			<p>brightness <span id="bright-percent">100%</span></p>
+			<input type="range" id="bright" min="0" max="200" onchange="change('bright')">
+			</div>
+			<div class="ajuste">
+			<p>contrast <span id="contrast-percent">100%</span></p>
+			<input type="range" id="contrast" min="0" max="200" onchange="change('contrast')">
+			</div>
+			<div class="ajuste">
+			<p>opacity <span id="opacity-percent">100%</span></p>
+			<input type="range" id="opacity" min="0" max="100" value="100" onchange="change('opacity')">
+			</div>
+			<div class="ajuste">
+			<p>grayscale<span id="grayscale-percent">0%</span></p>
+			<input type="range" id="grayscale" min="0" max="200" value="0" onchange="change('grayscale')">
+			</div>
+			<div class="ajuste">
+			<p>saturate <span id="saturate-percent">100%</span></p>
+			<input type="range" id="saturate" min="0" max="200" onchange="change('saturate')">
+			</div>
+			<div class="ajuste">   
+			<p>invert <span id="invert-percent">0%</span></p>
+			<input type="range" id="invert" min="0" max="100" value="0" onchange="change('invert')">
+			</div>
+			<div class="ajuste">
+			<p>blur <span id="blur-percent"></span></p>
+			<input type="range" id="blur" min="0" max="15" value="0" onchange="change('blur')">
+			</div>
+		</div>
+	</div>
 
   <script src="js/script.js"></script>
 </body>
