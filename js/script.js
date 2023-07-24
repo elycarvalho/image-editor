@@ -5,6 +5,9 @@ const grayscale = document.getElementById('grayscale')
 const saturate = document.getElementById('saturate')
 const invert = document.getElementById('invert')
 const blur = document.getElementById('blur')
+const sepia = document.getElementById('sepia')
+const rotate = document.getElementById('rotate')
+const borderRadius = document.getElementById('border-radius')
 
 const brightPercent = document.getElementById('bright-percent')
 const contrastPercent = document.getElementById('contrast-percent')
@@ -13,6 +16,10 @@ const grayscalePercent = document.getElementById('grayscale-percent')
 const saturatePercent = document.getElementById('saturate-percent')
 const invertPercent = document.getElementById('invert-percent')
 const blurPercent = document.getElementById('blur-percent')
+const sepiaPercent = document.getElementById('sepia-percent')
+const rotateDegree = document.getElementById('rotate-degree')
+const borderRadiusPercent = document.getElementById('border-radius-percent')
+
 
 const img = document.createElement('img')
 
@@ -58,7 +65,19 @@ function change(e){
       	break
       case 'blur':
       	img.style.filter = `blur(${blur.value}px)`
-      	blurPercent.innerHTML = `${blur.value}px`	 
+      	blurPercent.innerHTML = `${blur.value}px`
+      	break
+      case 'sepia':
+      	img.style.filter = `sepia(${sepia.value}%)`
+      	sepiaPercent.innerHTML = `${sepia.value}%`	
+      	break
+      case 'rotate':
+        img.style.transform = `rotate(${rotate.value}deg)`
+        rotateDegree.innerHTML = `${rotate.value}°` 
+        break
+      case 'border-radius':
+      	img.style.borderRadius = `${borderRadius.value}%`
+      	borderRadiusPercent.innerHTML = `${borderRadius.value}%`
     }
 }
 

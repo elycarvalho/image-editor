@@ -6,42 +6,44 @@
 
 body{
 	font-family: 'Roboto', arial, sans-serif;
+	background-color: #323435;
 }
 
 .container{
-	margin-top: 40px;
+	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 }
 
 .upper-bar{
+	padding: 10px;
 	display: flex;
-	justify-content: space-around;
 	top: 0;
 	position: absolute;
 	width: 100%;
-	border: 1px solid green;
-	height: 40px;
+	border: 1px solid lightgray;
+	height: 45px;
+	background-color: #E2E5E5;
 }
 
 .folder-icon{
 	font-size: 2rem;
     color: #DAD384;
-}
-
-#input-label{
-
+    margin: 0 5px;
 }
 
 #imgContainer{
-	border: 1px solid blue;
-	width: 640px;
-	height: 480px;
+	text-align: center;
+	border: 2px solid lightgray;
+	width: 650px;
+	height: 520px;
+	margin-right: 10px;
+	background-color: #E2E5E5;
 }
 
 img{
-	width: 100%;
-	height: 100%;
+	width: 90%;
+	height: 90%;
 }
 
 input[type="file"]{
@@ -53,10 +55,13 @@ input[type="file"]{
 }
 
 .container-ajustes{
+	width: 280px;
+	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	border: 1px solid red;
+	border: 1px solid lightgray;
+	background-color: #E2E5E5;
 }
 
 .ajuste{

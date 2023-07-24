@@ -16,39 +16,50 @@
 			<label for="fileInput" id="input-label"><i class="fa fa-folder folder-icon"></i> Escolher imagem</label>
 		    <input type="file" id="fileInput" name="fileInput">	
         </form>
-        <i class="fas fa-rotate"></i>
 	</div>
     <div class="container">     
 	    <div id="imgContainer"></div>
 
 		<div class="container-ajustes" >
 			<div class="ajuste">
-			<p>brightness <span id="bright-percent">100%</span></p>
-			<input type="range" id="bright" min="0" max="200" onchange="change('bright')">
+				<p>brightness <span id="bright-percent">100%</span></p>
+				<input type="range" id="bright" min="0" max="200" onchange="change('bright')">
 			</div>
 			<div class="ajuste">
-			<p>contrast <span id="contrast-percent">100%</span></p>
-			<input type="range" id="contrast" min="0" max="200" onchange="change('contrast')">
+				<p>contrast <span id="contrast-percent">100%</span></p>
+				<input type="range" id="contrast" min="0" max="200" onchange="change('contrast')">
 			</div>
 			<div class="ajuste">
-			<p>opacity <span id="opacity-percent">100%</span></p>
-			<input type="range" id="opacity" min="0" max="100" value="100" onchange="change('opacity')">
+				<p>opacity <span id="opacity-percent">100%</span></p>
+				<input type="range" id="opacity" min="0" max="100" value="100" onchange="change('opacity')">
 			</div>
 			<div class="ajuste">
-			<p>grayscale<span id="grayscale-percent">0%</span></p>
-			<input type="range" id="grayscale" min="0" max="200" value="0" onchange="change('grayscale')">
+				<p>grayscale <span id="grayscale-percent">0%</span></p>
+				<input type="range" id="grayscale" min="0" max="200" value="0" onchange="change('grayscale')">
 			</div>
 			<div class="ajuste">
-			<p>saturate <span id="saturate-percent">100%</span></p>
-			<input type="range" id="saturate" min="0" max="200" onchange="change('saturate')">
+				<p>saturate <span id="saturate-percent">100%</span></p>
+				<input type="range" id="saturate" min="0" max="200" onchange="change('saturate')">
 			</div>
 			<div class="ajuste">   
-			<p>invert <span id="invert-percent">0%</span></p>
-			<input type="range" id="invert" min="0" max="100" value="0" onchange="change('invert')">
+				<p>invert <span id="invert-percent">0%</span></p>
+				<input type="range" id="invert" min="0" max="100" value="0" onchange="change('invert')">
 			</div>
 			<div class="ajuste">
-			<p>blur <span id="blur-percent"></span></p>
-			<input type="range" id="blur" min="0" max="15" value="0" onchange="change('blur')">
+				<p>blur <span id="blur-percent"></span></p>
+				<input type="range" id="blur" min="0" max="15" value="0" onchange="change('blur')">
+			</div>
+			<div class="ajuste">   
+				<p>sepia <span id="sepia-percent">0%</span></p>
+				<input type="range" id="sepia" min="0" max="100" value="0" onchange="change('sepia')">
+			</div>
+			<div class="ajuste">   
+				<p>rotate <span id="rotate-degree">0°</span></p>
+				<input type="range" id="rotate" min="0" max="360" value="0" onchange="change('rotate')">
+			</div>
+			<div class="ajuste">   
+				<p>border-radius <span id="border-radius-percent">0%</span></p>
+				<input type="range" id="border-radius" min="0" max="50" value="0" onchange="change('border-radius')">
 			</div>
 		</div>
 	</div>
