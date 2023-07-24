@@ -15,11 +15,21 @@ body{
 }
 
 .upper-bar{
+	display: flex;
+	justify-content: space-around;
 	top: 0;
 	position: absolute;
 	width: 100%;
 	border: 1px solid green;
 	height: 40px;
+}
+
+.folder-icon{
+	font-size: 2rem;
+    color: #DAD384;
+}
+
+#input-label{
 
 }
 
@@ -34,11 +44,18 @@ img{
 	height: 100%;
 }
 
+input[type="file"]{
+	display: none;
+}
+
 #bright{
 	
 }
 
 .container-ajustes{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	border: 1px solid red;
 }
 
